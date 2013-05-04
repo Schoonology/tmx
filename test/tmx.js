@@ -4,6 +4,7 @@ var assert = require('assert')
   , util = require('util')
   , Writable = require('stream').Writable
   , tmx = require('../lib')
+  , map = require('./fixtures/map')
   , inputs
   , expected
 
@@ -22,8 +23,13 @@ inputs = [
 // The mutilation required here is about the best indication of what features are supported. As new features are added,
 // the Parser-supplied Objects will approach the same format as the Tiled-supplied JSON.
 expected = {
-  layers: require('./fixtures/map').layers.map(function (layer) {
+  width: map.width,
+  height: map.height,
+  layers: map.layers.map(function (layer) {
     return {
+      name: layer.name,
+      width: layer.width,
+      height: layer.height,
       data: layer.data
     }
   })
