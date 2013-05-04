@@ -1,0 +1,16 @@
+{
+  "name": "tmx",
+  "version": "0.1.0",
+  "description": "A simple-to-use, simple-to-understand, streams-based TMX parser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/tmx"
+  },
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sax": "~0.5.4",
+    "readable-stream": "~1.0.2"
+  }
+}
