@@ -1,6 +1,6 @@
 {
   "name": "tmx",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A simple-to-use, simple-to-understand, streams-based TMX parser.",
   "main": "index.js",
   "scripts": {
